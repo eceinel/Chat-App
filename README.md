@@ -1,1 +1,3 @@
-# Message-App
+# message_app
+
+A new Flutter project.
