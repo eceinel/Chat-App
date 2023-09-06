@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:faker/faker.dart';
 
 void main() {
   runApp(const MainApp());
@@ -93,7 +94,7 @@ class ChatCard extends StatelessWidget {
 
           margin: const EdgeInsets.fromLTRB(8.0,1.0,8.0,1.0),
 
-          child: const Row(
+          child: Row(
 
             children: [
               CircleAvatar(
@@ -103,14 +104,14 @@ class ChatCard extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('John Doe'),
-                  Text('Lorem ipsum dolor sit amet'),
+                  Text(faker.person.name()),
+                  Text(faker.lorem.sentence()),
                 ],
               ),
 
               Expanded(child: SizedBox(),),
 
-              Text('Time'),
+              Text(faker.date.time()),
             ],
           ),
         ),
@@ -148,7 +149,7 @@ class MessagePage extends StatelessWidget {
                   backgroundColor: Colors.amber,
                 ),
 
-                Text('John Doe',
+                Text('',
                   style: TextStyle(color: Color.fromRGBO(120, 120, 120, 1)),
                 ),
 
