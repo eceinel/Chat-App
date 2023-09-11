@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:faker/faker.dart';
+import 'package:hive/hive.dart';
 
 void main() {
   runApp(const MainApp());
